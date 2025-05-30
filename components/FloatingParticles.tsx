@@ -31,10 +31,10 @@ export default function FloatingParticles() {
     particles.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
     const particleMaterial = new THREE.PointsMaterial({
-      color: 0x94a3b8,
-      size: 0.02,
+      color: 0x10b981,
+      size: 0.05,
       transparent: true,
-      opacity: 0.6,
+      opacity: 0.8,
     });
 
     const particleSystem = new THREE.Points(particles, particleMaterial);
@@ -76,8 +76,8 @@ export default function FloatingParticles() {
   return (
     <div 
       ref={mountRef} 
-      className="fixed inset-0 pointer-events-none z-0"
-      style={{ zIndex: -1 }}
+      className="absolute inset-0 pointer-events-none"
+      style={{ zIndex: 1 }}
     />
   );
 }

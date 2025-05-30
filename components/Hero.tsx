@@ -22,7 +22,7 @@ export default function Hero({ name, bio, location, year, university, major, min
       style={{ backgroundColor: colors.background }}
     >
       <FloatingParticles />
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
+      <div className="relative max-w-4xl mx-auto text-center" style={{ zIndex: 10 }}>
         <h1 
           className="text-4xl sm:text-6xl lg:text-7xl font-light mb-6"
           style={{ color: colors.textPrimary }}
