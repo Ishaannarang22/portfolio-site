@@ -1,0 +1,59 @@
+# Personal Info
+Name: Ishaan Narang
+Short Bio: 
+Hi, I’m Ishaan. I study Computer Science at Penn State and focus on AI interpretability research. As secretary of the Google Developers Club, I enjoy working on creative projects and learning alongside others. I’m always looking for something new to learn, whether it’s exploring a new area in tech, the latest trends, or a tricky chess opening. I love challenging myself and believe the best ideas come from working together. Outside of class, you’ll find me cooking, playing chess and badminton, hitting the gym, or just enjoying a good cup of coffee with friends. I’m curious by nature and always up for a good conversation about AI, coffee, or anything in between.
+Location: New York City, NY | Univerity Park, PA
+Current Year (e.g., Sophomore, Junior): Junior 
+University: The Pennsylvania State University
+Major: Computer Science
+Minor: Math
+
+# Contact Info
+Email: ishaannarang22@gmail.com
+LinkedIn: https://linkedin.com/in/ishaannarang22
+GitHub: https://github.com/Ishaannarang22
+Instagram : https://instagram.com/_ishaannarang_ 
+
+# Projects
+# Add or remove as needed; use the same format
+Project 1 Name: FinGuard
+Project 1 Description: FinGuard is a browser extension and web dashboard that helps users spend smarter, stay safer, and build better financial habits.
+Project 1 GitHub Link: https://github.com/Ishaannarang22/FinGuard
+Project 1 Devpost Link: https://devpost.com/software/finguard-x1akuc
+Project 1 Image URL (if any): 
+Project 1 Details Page Text: Coming soon
+
+Project 2 Name: FindMyStuff
+Project 2 Description: A generative AI-powered lost-and-found platform that matches user descriptions to found items, streamlining Penn State’s outdated system and helping students quickly reclaim lost belongings.
+Project 2 GitHub Link: https://github.com/Ishaannarang22/findmystuff
+Project 2 Devpost Link: https://devpost.com/software/findmystuff
+Project 2 Image URL (if any): 
+Project 2 Details Page Text: Coming soon
+
+Project 3 Name: Nebula
+Project 3 Description: An AI-powered brain tumor detection tool featuring 94% accuracy and integrated 3D visualization, supporting both early diagnosis and hands-on medical education in underserved regions.
+Project 3 GitHub Link: https://github.com/Medify-2-0/HackPSU_Fall2023
+Project 3 Devpost Link: https://devpost.com/software/nebula-iogms1
+Project 3 Image URL (if any): 
+Project 3 Details Page Text: Coming Soon
+
+Project 4 Name: 
+Project 4 Description: 
+Project 4 GitHub Link: 
+Project 4 Image URL (if any): 
+Project 4 Details Page Text: 
+
+# Blog (Medium or Other)
+Blog Post 1 Title: Coming Soon
+Blog Post 1 URL: 
+
+Blog Post 2 Title: 
+Blog Post 2 URL: 
+
+Blog Post 3 Title: 
+Blog Post 3 URL: 
+
+# Additional Info (optional)
+Skills: 
+Awards or Certifications: 
+Interests: 
