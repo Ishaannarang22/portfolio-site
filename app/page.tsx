@@ -1,8 +1,12 @@
 import { getContent } from '@/lib/content';
 import Hero from '@/components/Hero';
+import Bio from '@/components/Bio';
 import Projects from '@/components/Projects';
 import Blog from '@/components/Blog';
 import Contact from '@/components/Contact';
+
+// Force dynamic rendering to pick up content changes
+export const dynamic = 'force-dynamic';
 
 export default function Home() {
   const content = getContent();
@@ -17,6 +21,10 @@ export default function Home() {
         university={content.personal.university}
         major={content.personal.major}
         minor={content.personal.minor}
+      />
+      <Bio 
+        bio={content.personal.bio}
+        year={content.personal.year}
       />
       <Projects projects={content.projects} />
       <Blog posts={content.blog} />

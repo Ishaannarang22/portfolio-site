@@ -3,6 +3,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
+// Force dynamic rendering to pick up content changes
+export const dynamic = 'force-dynamic';
+
 interface ProjectPageProps {
   params: Promise<{
     id: string;
