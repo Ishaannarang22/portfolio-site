@@ -24,46 +24,46 @@ export default function Hero({ name, bio, location, year, university, major, min
       <FloatingParticles />
       <div className="relative max-w-4xl mx-auto text-center" style={{ zIndex: 10 }}>
         <h1 
-          className="text-4xl sm:text-6xl lg:text-7xl font-light mb-6"
+          className="text-5xl sm:text-6xl lg:text-7xl font-light mb-8 leading-tight"
           style={{ color: colors.textPrimary }}
         >
           {name}
         </h1>
         
-        <div className="space-y-4 mb-8">
+        <div className="space-y-3 mb-10">
           <p 
-            className="text-lg sm:text-xl font-light"
+            className="text-base sm:text-lg md:text-xl font-light"
             style={{ color: colors.textSecondary }}
           >
             {year} • {major} {minor && `• ${minor} Minor`}
           </p>
           <p 
-            className="text-lg sm:text-xl font-light"
+            className="text-base sm:text-lg md:text-xl font-light"
             style={{ color: colors.textSecondary }}
           >
             {university}
           </p>
           <p 
-            className="text-base sm:text-lg font-light"
+            className="text-sm sm:text-base md:text-lg font-light"
             style={{ color: colors.textTertiary }}
           >
             {location}
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-2xl sm:max-w-3xl mx-auto px-4 sm:px-0">
           <p 
-            className="text-lg sm:text-xl leading-relaxed font-light"
+            className="text-base sm:text-lg md:text-xl leading-relaxed font-light"
             style={{ color: colors.textSecondary }}
           >
             {bio}
           </p>
         </div>
 
-        <div className="mt-12">
+        <div className="mt-10 sm:mt-12">
           <a 
             href="#projects" 
-            className="inline-flex items-center px-8 py-3 text-base font-medium rounded-full transition-colors duration-200"
+            className="inline-flex items-center px-6 sm:px-8 py-3 text-sm sm:text-base font-medium rounded-full transition-colors duration-200"
             style={{ 
               borderColor: colors.border,
               color: colors.textPrimary,
