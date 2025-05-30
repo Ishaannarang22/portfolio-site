@@ -24,7 +24,6 @@ export default function Home() {
       />
       <Bio 
         bio={content.personal.bio}
-        year={content.personal.year}
       />
       <Projects projects={content.projects} />
       <Blog posts={content.blog} />

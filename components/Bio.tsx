@@ -4,10 +4,9 @@ import { useColors } from '@/hooks/useColors';
 
 interface BioProps {
   bio: string;
-  year: string;
 }
 
-export default function Bio({ bio, year }: BioProps) {
+export default function Bio({ bio }: BioProps) {
   const colors = useColors();
 
   return (

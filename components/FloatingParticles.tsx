@@ -8,7 +8,8 @@ export default function FloatingParticles() {
   const frameRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
-    if (!mountRef.current) return;
+    const currentMount = mountRef.current;
+    if (!currentMount) return;
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -16,7 +17,7 @@ export default function FloatingParticles() {
     
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setClearColor(0x000000, 0);
-    mountRef.current.appendChild(renderer.domElement);
+    currentMount.appendChild(renderer.domElement);
 
     const particleCount = 100;
     const particles = new THREE.BufferGeometry();
@@ -65,7 +66,6 @@ export default function FloatingParticles() {
         cancelAnimationFrame(frameRef.current);
       }
       window.removeEventListener('resize', handleResize);
-      const currentMount = mountRef.current;
       if (currentMount && renderer.domElement) {
         currentMount.removeChild(renderer.domElement);
       }
