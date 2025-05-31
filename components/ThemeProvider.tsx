@@ -2,31 +2,31 @@
 
 import { createContext, useContext, useEffect, useState } from 'react';
 
-type Theme = 'light' | 'dark';
+type Theme = 'light' | 'dark' | 'system';
 
 const ThemeContext = createContext<{
   theme: Theme;
   toggleTheme: () => void;
 }>({
-  theme: 'light',
+  theme: 'system',
   toggleTheme: () => {},
 });
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>('light');
+  const [theme, setTheme] = useState<Theme>('system');
 
   useEffect(() => {
     const stored = localStorage.getItem('theme') as Theme;
-    const systemPrefers = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    setTheme(stored || systemPrefers);
+    setTheme(stored || 'system');
   }, []);
 
   useEffect(() => {
-    document.documentElement.classList.toggle('dark', theme === 'dark');
+    const isDark = theme === 'dark' || (theme === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.classList.toggle('dark', isDark);
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  const toggleTheme = () => setTheme(prev => prev === 'light' ? 'dark' : 'light');
+  const toggleTheme = () => setTheme(prev => prev === 'light' ? 'dark' : prev === 'dark' ? 'system' : 'light');
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
