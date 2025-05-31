@@ -1,5 +1,6 @@
 'use client';
 
+import FloatingParticles from './FloatingParticles';
 import { useColors } from '@/hooks/useColors';
 
 interface BlogPost {
@@ -19,9 +20,10 @@ export default function Blog({ posts }: BlogProps) {
     return (
       <section 
         id="blog" 
-        className="py-20 px-4 sm:px-6 lg:px-8 transition-colors duration-300"
+        className="min-h-screen flex items-center justify-center py-20 px-8 sm:px-6 lg:px-8 transition-colors duration-300"
         style={{ backgroundColor: colors.background }}
       >
+        
         <div className="max-w-4xl mx-auto text-center">
           <h2 
             className="text-3xl sm:text-4xl font-semibold mb-8"

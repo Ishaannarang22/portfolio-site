@@ -19,20 +19,20 @@ export default function Contact({ contact }: ContactProps) {
   return (
     <section 
       id="contact" 
-      className="min-h-screen flex items-center justify-center py-32 px-4 sm:px-6 lg:px-8 transition-colors duration-300"
+      className="min-h-screen flex items-center justify-center py-20 px-8 sm:px-6 lg:px-8 transition-colors duration-300"
       style={{ backgroundColor: colors.backgroundSecondary }}
     >
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto text-center">
         <div className="mb-16">
           <h2 
-            className="text-5xl sm:text-6xl font-bold mb-8"
+            className="text-3xl sm:text-4xl font-semibold mb-8"
             style={{ color: colors.textPrimary }}
           >
-            Get In Touch
+            Contact
           </h2>
           
           <p 
-            className="text-xl sm:text-2xl mb-12 max-w-4xl mx-auto leading-relaxed"
+            className="text-lg"
             style={{ color: colors.textSecondary }}
           >
             I&apos;m always interested in new opportunities, collaborations, and conversations. 
@@ -62,7 +62,7 @@ export default function Contact({ contact }: ContactProps) {
             or connect with me on
           </div>
 
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-8 ">
             <a 
               href={contact.linkedin}
               target="_blank"

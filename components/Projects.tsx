@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useColors } from '@/hooks/useColors';
 
+
 interface Project {
   id: string;
   name: string;
@@ -24,6 +25,7 @@ export default function Projects({ projects }: ProjectsProps) {
       className="py-20 px-4 sm:px-6 lg:px-8 transition-colors duration-300"
       style={{ backgroundColor: colors.backgroundSecondary }}
     >
+
       <div className="max-w-6xl mx-auto">
         <h2 
           className="text-3xl sm:text-4xl font-semibold text-center mb-16"

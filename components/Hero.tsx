@@ -1,6 +1,5 @@
 'use client';
 
-import FloatingParticles from './FloatingParticles';
 import { useColors } from '@/hooks/useColors';
 
 interface HeroProps {
@@ -21,7 +20,6 @@ export default function Hero({ name, bio, location, year, university, major, min
       className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden"
       style={{ backgroundColor: colors.background }}
     >
-      <FloatingParticles />
       {/* Mobile Layout - Minimal */}
       <div className="relative max-w-4xl mx-auto text-center md:hidden" style={{ zIndex: 10 }}>
         <h1 
