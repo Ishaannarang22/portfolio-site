@@ -26,7 +26,14 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     localStorage.setItem('theme', theme);
   }, [theme]);
 
-  const toggleTheme = () => setTheme(prev => prev === 'light' ? 'dark' : prev === 'dark' ? 'system' : 'light');
+  const toggleTheme = () => {
+    if (theme === 'system') {
+      const systemPrefersDark = typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setTheme(systemPrefersDark ? 'light' : 'dark');
+    } else {
+      setTheme(prev => prev === 'light' ? 'dark' : 'light');
+    }
+  };
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
