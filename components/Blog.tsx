@@ -1,6 +1,6 @@
 'use client';
 
-import FloatingParticles from './FloatingParticles';
+
 import { useColors } from '@/hooks/useColors';
 
 interface BlogPost {
